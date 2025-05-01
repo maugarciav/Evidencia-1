@@ -10,12 +10,17 @@ Este trabajo fue realizado por un equipo de tres personas, cada una explorando d
 
 ### Selección de Datos
 
-Para el desarrollo y evaluación de este modelo de detección de plagio, se utilizó el conjunto de datos "Dokumen Teks", disponible públicamente en Kaggle ([Plagiarism Document Text](https://www.kaggle.com/datasets/fajarpanaungi/plagiarism-document-text)). Este conjunto de datos está estructurado en dos carpetas principales:
+Para el desarrollo y evaluación de este modelo de detección de plagio, se seleccionó el conjunto de datos "Dokumen Teks", disponible públicamente en Kaggle ([Plagiarism Document Text](https://www.kaggle.com/datasets/fajarpanaungi/plagiarism-document-text)). La elección de este dataset se fundamentó en varios factores clave que lo hacen adecuado para la exploración y evaluación de modelos de detección de plagio basados en la similitud semántica:
 
-1.  **Original**: Contiene los documentos fuente que sirven como referencia.
-2.  **Copy**: Contiene documentos que son versiones modificadas o copias de los documentos originales, diseñados para simular diferentes escenarios de plagio o similitud.
+1.  **Estructura Clara y Propósito Específico:** El dataset está organizado en dos carpetas principales: "Original", que contiene documentos fuente, y "Copy", que alberga documentos que son modificaciones o copias de los originales. Esta estructura facilita la creación de pares comparables (original vs. sospechoso), lo cual es esencial para entrenar y evaluar un modelo diseñado para identificar relaciones de similitud y potencial plagio entre textos específicos.
 
-La elección de este conjunto de datos se basa en su estructura clara, que permite una comparación directa por pares entre un documento original y su correspondiente versión sospechosa. Esto facilita la evaluación del modelo en su tarea principal: determinar el grado de similitud entre dos textos específicos.
+2.  **Simulación de Escenarios de Plagio:** Los documentos en la carpeta "Copy" fueron creados para simular diversos escenarios de plagio, incluyendo la copia directa, la paráfrasis y la sustitución de palabras. Esto permite evaluar la robustez del modelo ante diferentes estrategias de manipulación textual.
+
+3.  **Disponibilidad Pública y Accesibilidad:** Al ser un dataset público en Kaggle, garantiza la transparencia y la reproducibilidad de la investigación.
+
+4.  **Tamaño Adecuado para la Exploración:** El tamaño del dataset (100 pares de documentos) es manejable para las etapas iniciales de desarrollo y experimentación, permitiendo realizar pruebas iterativas y analizar los resultados con relativa rapidez.
+
+En resumen, la selección del dataset "Dokumen Teks" se basó en su estructura organizada, su capacidad para simular escenarios de plagio, su accesibilidad pública y su relevancia para la tarea de detección de plagio en textos. 
 
 ### Análisis de Datos
 

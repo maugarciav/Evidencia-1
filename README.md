@@ -71,7 +71,9 @@ El análisis exploratorio reveló que los textos clasificados con alta similitud
 
 ### Presentación de Hallazgos
 
-Los resultados del análisis de similitud entre los documentos originales y sospechosos son los siguientes:
+Es importante destacar que, debido a que el dataset "Dokumen Teks" no proporciona etiquetas definitivas que indiquen si cada par de documentos constituye plagio, sospecha o es original (es decir, no contamos con el "ground truth"), no es posible utilizar métricas de clasificación supervisada tradicionales como la precisión (accuracy), el F1-score o el recall. Estas métricas requieren conocer las etiquetas verdaderas para evaluar el rendimiento del modelo al predecir dichas etiquetas.
+
+Al no disponer de estas etiquetas, recurrimos a **métricas de clustering** como el Silhouette Coefficient, la Pureza del Cluster y la Ganancia de Información. Estas métricas evalúan la estructura inherente de los datos en el espacio de características (en este caso, la similitud y la confianza calculadas por el modelo) y la calidad de la agrupación de los documentos según estas características. Un buen clustering, aunque no se compare directamente con una verdad conocida, puede indicar que el modelo está encontrando patrones significativos en los datos que podrían corresponder a diferentes niveles de similitud o potencial plagio.
 
 - **Métricas de Clustering:** Estas métricas evalúan la calidad de la agrupación de los datos en función de su similitud y confianza.
   - **Silhouette Coefficient:** Mide qué tan similar es un objeto a su propio cluster en comparación con otros clusters. Valores cercanos a +1 indican que el objeto está bien agrupado, valores cercanos a 0 indican que el objeto está cerca del límite de decisión entre dos clusters, y valores negativos indican que el objeto esta mal agrupado.

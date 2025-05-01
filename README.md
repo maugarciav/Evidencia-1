@@ -100,7 +100,7 @@ El histograma de distribución de similitudes muestra una concentración notable
 
 En cuanto al logro de los objetivos, si bien se exploró la viabilidad de BERT para la detección de plagio, los resultados sugieren que, con la configuración actual (umbral y preprocesamiento básico), el modelo presenta limitaciones en la separación clara de las clases. Aunque se identificaron posibles casos de plagio, la calidad del clustering y la distribución de similitudes indican que no se logró una discriminación robusta en todos los casos.
 
-Para la version mejorada de reto se comprara con los resultados de los modelos de mis compañeros usando la misma configuracion y poder analizar caul nos lleva a los mejores resultados.
+Para la version mejorada de reto se comprara con los resultados de los modelos de mis compañeros usando la misma configuracion y poder analizar cual nos lleva a los mejores resultados.
 
 ## Conclusiones
 

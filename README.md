@@ -67,9 +67,6 @@ El análisis exploratorio reveló que los textos clasificados con alta similitud
     - **Original**: Similitud coseno < 0.75
       Además, se calcula un nivel de confianza para cada clasificación, indicando qué tan lejos o cerca está la similitud del umbral de plagio. La confianza para la clasificación de plagio se calcula como `(sim - umbral) / (1 - umbral)`, y para la clasificación de original como `1 - (sim / umbral)`.
 
-4.  **Evaluación y ajuste (Pendiente)**:
-    - La evaluación del modelo con textos etiquetados y el ajuste de umbrales para optimizar la precisión se realizarán en etapas posteriores, una vez que se hayan obtenido los resultados iniciales. El análisis de errores se llevará a cabo para identificar los tipos de plagio que el modelo detecta con mayor o menor eficacia.
-
 ## Resultados
 
 ### Presentación de Hallazgos
